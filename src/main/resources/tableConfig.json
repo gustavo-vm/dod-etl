@@ -1,0 +1,52 @@
+[
+  {
+    "tableName": "EQUIPMENT_STATUS",
+    "metaTopicName": "EQUIPMENT_STATUS_META",
+    "opTopicName": "EQUIPMENT_STATUS_OP",
+    "filterColumn": "COD_EQUIPMENT",
+    "transacTimestampCol": "DT_LAST_MODIFICATION",
+    "isMetadata": true,
+    "isOperational": false,
+    "retentionPeriodInDays": 10
+  },
+  {
+    "tableName": "PERIOD_SHIFT",
+    "metaTopicName": "PERIOD_SHIFT_META",
+    "opTopicName": "PERIOD_SHIFT_OP",
+    "filterColumn": "COD_EQUIPMENT",
+    "transacTimestampCol": "DT_LAST_MODIFICATION",
+    "isMetadata": true,
+    "isOperational": false,
+    "retentionPeriodInDays": 10
+  },
+  {
+    "tableName": "PRODUCTION_ORDER",
+    "metaTopicName": "PRODUCTION_ORDER_META",
+    "opTopicName": "PRODUCTION_ORDER_OP",
+    "filterColumn": "COD_EQUIPMENT",
+    "transacTimestampCol": "DT_LAST_MODIFICATION",
+    "isMetadata": true,
+    "isOperational": false,
+    "retentionPeriodInDays": 10
+  },
+  {
+    "tableName": "PRODUCT_QUALITY",
+    "metaTopicName": "PRODUCT_QUALITY_META",
+    "opTopicName": "PRODUCT_QUALITY_OP",
+    "filterColumn": "COD_EQUIPMENT",
+    "transacTimestampCol": "DT_LAST_MODIFICATION",
+    "isMetadata": true,
+    "isOperational": false,
+    "retentionPeriodInDays": 10
+  },
+  {
+    "tableName": "PRODUCT",
+    "metaTopicName": "PRODUCT_META",
+    "opTopicName": "PRODUCT_OP",
+    "filterColumn": "COD_EQUIPMENT",
+    "transacTimestampCol": "DT_LAST_MODIFICATION",
+    "isMetadata": true,
+    "isOperational": true,
+    "retentionPeriodInDays": 10
+  }
+]

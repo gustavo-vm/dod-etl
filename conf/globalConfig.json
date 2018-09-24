@@ -1,0 +1,18 @@
+{
+  "spark":{
+    "local": true,
+    "offset": "earliest"
+  },
+  "kafka": {
+    "bootstrapServers": "localhost:9092",
+    "schemaRegistryUrl": "http://localhost:8083"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "db": "DODETL",
+    "user": "root",
+    "passwd": "@cc2oo14"
+  },
+  "numKafkaTables": 100
+}

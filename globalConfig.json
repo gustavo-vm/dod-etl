@@ -1,0 +1,20 @@
+{
+  "spark": {
+    "jobName": "DODETL",
+    "local": false,
+    "memTable": true,
+    "offset": "earliest"
+  },
+  "kafka": {
+    "bootstrapServers": "10.142.0.5:9092,10.142.0.6:9092,10.142.0.7:9092",
+    "schemaRegistryUrl": "http://10.142.0.6:8081"
+  },
+  "mysql": {
+    "host": "10.142.0.3",
+    "port": 3306,
+    "db": "DODETL",
+    "user": "root",
+    "passwd": "PAjis3MyfC9H"
+  },
+  "numKafkaTables": 100
+}
