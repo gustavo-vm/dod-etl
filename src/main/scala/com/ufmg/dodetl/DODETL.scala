@@ -2,7 +2,8 @@ package com.ufmg.dodetl
 
 
 import com.ufmg.dodetl.config.ConfigLoader
-import com.ufmg.dodetl.stp.StreamProcessor
+import com.ufmg.dodetl.stp.BeamStreamProcessor
+import scala.collection.JavaConverters._
 
 object DODETL {
 
@@ -23,7 +24,7 @@ object DODETL {
     val metaTableConfigList = tableConfigurationList.filter(x => x.isMetadata)
 
 
-    val streamProcessor = new StreamProcessor(globalConfig.spark, globalConfig.kafka, globalConfig.mysql, operationTableConfig, metaTableConfigList)
+    val streamProcessor = new BeamStreamProcessor(globalConfig.spark, globalConfig.kafka, globalConfig.mysql, operationTableConfig, metaTableConfigList)
     streamProcessor.process()
 
   }
